@@ -8,6 +8,13 @@
 
 import UIKit
 
+var category:[Category] = [
+    Category(titulo: "Sci-fi", img: UIImage(named: "scifi")!),
+    Category(titulo: "Comedy", img: UIImage(named: "comedy")!),
+    Category(titulo: "Fantastic", img: UIImage(named: "fantastic")!),
+    Category(titulo: "Terror", img: UIImage(named: "terror")!),
+]
+
 class ViewControllerDefaultTable: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -24,14 +31,8 @@ class ViewControllerDefaultTable: UIViewController, UITableViewDataSource, UITab
         
     }
     
+  
     
-
-    var category:[Category] = [
-        Category(titulo: "Sci-fi", img: UIImage(named: "scifi")!),
-        Category(titulo: "Comedy", img: UIImage(named: "comedy")!),
-        Category(titulo: "Drama", img: UIImage(named: "drama")!),
-        Category(titulo: "Terror", img: UIImage(named: "terror")!),
-    ]
     
     @IBOutlet weak var tableView: UITableView!
     

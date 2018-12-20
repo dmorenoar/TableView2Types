@@ -12,18 +12,28 @@ class ViewControllerCustomTable: UIViewController, UITableViewDelegate, UITableV
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return category.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let myCell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
+        let myCell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! TableViewCellCustom
         
-       // myCell.textLabel?.text = category[indexPath.row]
+       myCell.lblCell.text  = category[indexPath.row].titulo
+       myCell.imgCell.image = category[indexPath.row].img
         
-        return myCell
+       return myCell
     }
     
-
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Categories"
+    }
+    
+    
+    
     @IBOutlet weak var tableView: UITableView!
     
     
