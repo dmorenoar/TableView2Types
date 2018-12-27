@@ -15,6 +15,24 @@ var category:[Category] = [
     Category(titulo: "Terror", img: UIImage(named: "terror")!),
 ]
 
+var categoryProducts:[Category] = [
+    
+    Category(titulo: "Comedy", img: UIImage(named: "comedy")!, listProducts: [
+        Product(titulo: "Rompe Ralph", precio: 22, img: UIImage(named: "rompeRalph")!),
+        Product(titulo: "Zoolander", precio: 88, img: UIImage(named: "zoolander")!)
+    ]),
+    Category(titulo: "Drama", img: UIImage(named: "drama")!, listProducts: [
+        Product(titulo: "Titanic", precio: 33, img: UIImage(named: "titanic")!),
+        Product(titulo: "Lo imposible", precio: 88, img: UIImage(named: "loImposible")!),
+        Product(titulo: "Ha nacido una estrella", precio: 15, img: UIImage(named: "nacidoEstrella")!)
+        ]),
+    Category(titulo: "Sci-fi", img: UIImage(named: "scifi")!, listProducts: [
+        Product(titulo: "Matrix", precio: 22, img: UIImage(named: "matrix")!),
+        Product(titulo: "Interstellar", precio: 88, img: UIImage(named: "interstellar")!)
+        ])
+]
+
+
 class ViewControllerDefaultTable: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
