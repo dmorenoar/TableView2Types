@@ -27,9 +27,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9K-Cg-LSf">
-                                <rect key="frame" x="79" y="258" width="222" height="30"/>
+                                <rect key="frame" x="49" y="258" width="282" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="TableView con fila personalizada"/>
+                                <state key="normal" title="TableView con fila personalizada y efecto"/>
                                 <connections>
                                     <segue destination="voT-TR-LRn" kind="show" id="grd-i2-N7G"/>
                                 </connections>
@@ -239,6 +239,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vTD-C7-R7f"/>
+        <segue reference="7MJ-tb-nxR"/>
     </inferredMetricsTieBreakers>
 </document>

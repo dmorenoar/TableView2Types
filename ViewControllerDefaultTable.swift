@@ -13,6 +13,14 @@ var category:[Category] = [
     Category(titulo: "Comedy", img: UIImage(named: "comedy")!),
     Category(titulo: "Fantastic", img: UIImage(named: "fantastic")!),
     Category(titulo: "Terror", img: UIImage(named: "terror")!),
+    Category(titulo: "Sci-fi", img: UIImage(named: "scifi")!),
+    Category(titulo: "Comedy", img: UIImage(named: "comedy")!),
+    Category(titulo: "Fantastic", img: UIImage(named: "fantastic")!),
+    Category(titulo: "Terror", img: UIImage(named: "terror")!),
+    Category(titulo: "Sci-fi", img: UIImage(named: "scifi")!),
+    Category(titulo: "Comedy", img: UIImage(named: "comedy")!),
+    Category(titulo: "Fantastic", img: UIImage(named: "fantastic")!),
+    Category(titulo: "Terror", img: UIImage(named: "terror")!)
 ]
 
 var categoryProducts:[Category] = [

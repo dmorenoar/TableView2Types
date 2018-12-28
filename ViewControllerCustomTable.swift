@@ -32,6 +32,33 @@ class ViewControllerCustomTable: UIViewController, UITableViewDelegate, UITableV
         return "Categories"
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        //Efecto left in
+        let rotationTransform = CATransform3DTranslate(CATransform3DIdentity, -500, 10, 0)
+        cell.layer.transform = rotationTransform
+        cell.alpha = 0.5
+        
+        UIView.animate(withDuration: 1.0) {
+            cell.layer.transform = CATransform3DIdentity
+            cell.alpha = 1.0
+        }
+        
+        
+        /*
+        //efecto fade IN
+        let rotationTransform = CATransform3DTranslate(CATransform3DIdentity, 0, 50, 0)
+        cell.layer.transform = rotationTransform
+        cell.alpha = 0
+        UIView.animate(withDuration: 0.75) {
+            cell.layer.transform = CATransform3DIdentity
+            cell.alpha = 1.0
+        }*/
+    }
+    
+    
+    
+    
     
     
     @IBOutlet weak var tableView: UITableView!
