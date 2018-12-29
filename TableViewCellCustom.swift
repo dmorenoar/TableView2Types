@@ -13,6 +13,8 @@ class TableViewCellCustom: UITableViewCell {
     @IBOutlet weak var imgCell: UIImageView!
     @IBOutlet weak var lblCell: UILabel!
     
+    @IBOutlet weak var imgLiked: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

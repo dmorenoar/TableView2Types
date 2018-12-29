@@ -13,17 +13,20 @@ class Category {
     
     var titulo:String
     var img:UIImage = UIImage()
+    var isLiked:Bool //Controlamos si le gusta el género
     var listProducts:[Product] = [Product]()
     
     
-    init(titulo:String,img:UIImage,listProducts:[Product]) {
+    init(titulo:String,img:UIImage,isLiked:Bool, listProducts:[Product]) {
         self.titulo = titulo
         self.img = img
+        self.isLiked = isLiked
         self.listProducts = listProducts
     }
     
-    init(titulo:String,img:UIImage) {
+    init(titulo:String,isLiked:Bool,img:UIImage) {
         self.titulo = titulo
+        self.isLiked = isLiked
         self.img = img
     }
     

@@ -21,6 +21,8 @@
 		FA2858D021D51E6800467CA4 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2858CF21D51E6800467CA4 /* Product.swift */; };
 		FA2858D321D51E6800467CA4 /* TableViewCellSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2858D221D51E6800467CA4 /* TableViewCellSections.swift */; };
 		FA2858D521D51E6800467CA4 /* ViewControllerTableViewSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2858D421D51E6800467CA4 /* ViewControllerTableViewSections.swift */; };
+		FAB1C56821D6E7C100D81F95 /* ViewControllerCategorySegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1C56721D6E7C100D81F95 /* ViewControllerCategorySegue.swift */; };
+		FAB1C56A21D7C54300D81F95 /* ViewControllerSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1C56921D7C54300D81F95 /* ViewControllerSimple.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		FA2858CF21D51E6800467CA4 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		FA2858D221D51E6800467CA4 /* TableViewCellSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellSections.swift; sourceTree = "<group>"; };
 		FA2858D421D51E6800467CA4 /* ViewControllerTableViewSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewSections.swift; sourceTree = "<group>"; };
+		FAB1C56721D6E7C100D81F95 /* ViewControllerCategorySegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCategorySegue.swift; sourceTree = "<group>"; };
+		FAB1C56921D7C54300D81F95 /* ViewControllerSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSimple.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,8 @@
 		3370679A21CB87C500A6E735 = {
 			isa = PBXGroup;
 			children = (
+				FAB1C56921D7C54300D81F95 /* ViewControllerSimple.swift */,
+				FAB1C56721D6E7C100D81F95 /* ViewControllerCategorySegue.swift */,
 				FA2858D121D51E6800467CA4 /* TableViewSections */,
 				FA2858CE21D51E3E00467CA4 /* Models */,
 				337067DC21CB892100A6E735 /* ViewControllerDefaultTable.swift */,
@@ -301,6 +307,8 @@
 				337067A921CB87C500A6E735 /* ViewController.swift in Sources */,
 				337067A721CB87C500A6E735 /* AppDelegate.swift in Sources */,
 				337067DF21CB8B5E00A6E735 /* Category.swift in Sources */,
+				FAB1C56821D6E7C100D81F95 /* ViewControllerCategorySegue.swift in Sources */,
+				FAB1C56A21D7C54300D81F95 /* ViewControllerSimple.swift in Sources */,
 				FA2858D021D51E6800467CA4 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,6 +15,21 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func showView(_ sender: UIButton) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "viewSimple") as! ViewControllerSimple
+        
+        self.present(vc, animated: true, completion: nil)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueInfo" {
+            if let destinationVC = segue.destination as? ViewControllerSimple {
+                destinationVC.lblH  = "Hola con Segue"
+            }
+            
+        }
+    }
+    
 }
 
