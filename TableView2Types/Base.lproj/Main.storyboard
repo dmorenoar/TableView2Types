@@ -46,6 +46,9 @@
                                 <rect key="frame" x="79" y="307" width="162" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="TableView con Sectiosn"/>
+                                <connections>
+                                    <segue destination="Crv-Dm-1lB" kind="show" id="g6r-7h-n2z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CoU-X4-C9N">
                                 <rect key="frame" x="50" y="451" width="251" height="30"/>
@@ -215,14 +218,20 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOV-Kd-4y5">
+                                                    <rect key="frame" x="317" y="15" width="32" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="heart"/>
+                                                </button>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="Mct-U3-1Nu">
-                                                    <rect key="frame" x="318" y="51" width="33" height="33"/>
+                                                    <rect key="frame" x="316" y="72" width="33" height="33"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="imgCell" destination="OQs-Fy-Y19" id="Xku-Yv-vpO"/>
+                                            <outlet property="imgHeart" destination="sOV-Kd-4y5" id="m8Z-TL-iUb"/>
                                             <outlet property="imgLiked" destination="Mct-U3-1Nu" id="2XM-4U-snX"/>
                                             <outlet property="lblCell" destination="qkd-38-qBU" id="iwt-xc-dWY"/>
                                         </connections>
@@ -346,10 +355,11 @@
     </scenes>
     <resources>
         <image name="comedy" width="96" height="96"/>
+        <image name="heart" width="32" height="32"/>
         <image name="like" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4o1-KY-OgW"/>
+        <segue reference="vTD-C7-R7f"/>
         <segue reference="Ukg-FN-9vE"/>
     </inferredMetricsTieBreakers>
 </document>

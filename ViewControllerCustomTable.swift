@@ -27,8 +27,16 @@ class ViewControllerCustomTable: UIViewController, UITableViewDelegate, UITableV
             myCell.imgLiked.isHidden = false
         }
         
+        myCell.imgHeart.tag = indexPath.row
+        myCell.imgHeart.addTarget(self, action: #selector(clickHeart), for: .touchUpInside)
+        
         
        return myCell
+    }
+    
+    @objc func clickHeart(sender:UIButton){
+        
+        print("Has pulsado el corazón de la fila: ",sender.tag)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
